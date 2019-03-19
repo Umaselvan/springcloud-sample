@@ -18,8 +18,8 @@ import io.javabrains.moviecatalogservice.model.UserRating;
 @RequestMapping("/catalog")
 public class MovieCatalogController {
 
-	private static final String MOVIE_INFO_URL = "http://movie-info-service/movies/";
-	private static final String MOVIE_RATINGS_URL = "http://ratings-data-service/ratings/users/";
+	private static final String MOVIE_INFO_URL = "http://localhost:8001/movies/";
+	private static final String MOVIE_RATINGS_URL = "http://localhost:8002/ratings/users/";
 	
 	@Autowired
 	private RestTemplate restTemplate;
